@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Josh's Rock Paper Scissors</title>
+</head>
+
+<body>
+  <header>
+    <h1>Rock - Paper - Scissors</h1>
+  </header>
+  <div class="container mx-auto">
+    <div class="row">
+      <div class="col-sm-12 mb-4">
+        <img src="images/rockps.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-2 mx-auto" id="col-1">
+        <h3>Player 1</h3>
+        <h3>Score: <span id="player-score">0</span></h3>
+        <div>
+          <img id="player-choice" src="" alt="">
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-sm-12 col-md-2 mx-auto" id="col-2">
+        <h3>Player Input</h3>
+        <input type="text" id="player-input"><br>
+        <!-- <div class=""> -->
+        <div class="btn-group-vertical btn-div">
+          <button type="button" class="btn btn-primary submit">SUBMIT</button>
+          <button type="button" class="btn btn-success reset">RESET</button>
+          <button type="button" class="btn btn-info erase">ERASE</button>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!--  -->
+      <div class="col-sm-12 col-md-2 mx-auto" id="col-3">
+        <h3>Computer</h3>
+        <h3>Score: <span id="computer-score">0</span></h3>
+        <div id="">
+          <img id="computer-choice" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
