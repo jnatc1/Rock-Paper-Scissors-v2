@@ -54,24 +54,31 @@ submitBtn.addEventListener('click', () => {
   let computerSelection = computerPlay();
   playerPic();
   if (playerInput.value === 'rock' && computerSelection === 'scissors') {
-    gameResult.innerHTML = "Player 1 Wins!";
+    gameResult.innerHTML = "Point, Player 1";
     playerTally += 1;
   } 
   else if (playerInput.value === 'scissors' && computerSelection === 'paper') {
     playerTally += 1;
-    gameResult.innerHTML = "Player 1 Wins!";
+    gameResult.innerHTML = "Point, Player 1";
   } 
   else if (playerInput.value === 'paper' && computerSelection === 'rock') {
     playerTally += 1;
-    gameResult.innerHTML = "Player 1 Wins!";
+    gameResult.innerHTML = "Point, Player 1";
   } 
   else if (playerInput.value === computerSelection) {
-    gameResult.innerHTML = "We Have a Draw!";
+    gameResult.innerHTML = "Draw!";
   } 
   else {
     computerTally += 1;
-    gameResult.innerHTML = "Player 1 Loses, Computer Wins!";
+    gameResult.innerHTML = "Point, Computer";
   }
+  if(playerTally === 5){
+    gameResult.innerHTML = "Player 1 Wins!";
+  }
+  else if(computerTally === 5){
+    gameResult.innerHTML = "Computer wins!";
+  }
+
 playerScore.innerHTML = playerTally;
 computerScore.innerHTML = computerTally;
 console.log("Computer " + computerSelection);
